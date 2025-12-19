@@ -107,6 +107,7 @@ def signup(request: SignupRequest, db: Session = Depends(get_db)):
     # Create new admin
     admin = Admin(
         username=request.username,
+        email=request.email,
         password=request.password,  # Plain text storage
         full_name=request.full_name
     )
