@@ -16,7 +16,7 @@ load_dotenv()
 # Get database URL from environment
 DATABASE_URL = os.getenv(
     "DATABASE_URL", 
-    "mysql+pymysql://cogninode:19801980@98.130.114.230:3306/cyberanytime"
+    "give your database url"
 )
 
 # Create database engine
